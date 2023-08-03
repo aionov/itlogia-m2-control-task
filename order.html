@@ -8,7 +8,7 @@
     <header>
         <nav>
             <a href="index.html">Главная</a>
-            <a href="compare13pro.html">Сравнение с 13 Pro</a>
+            <a href="index.html#table">Сравнение с 13 Pro</a>
             <a href="reviews.html">Отзывы</a>
             <a href="order.html">Заказать</a>
         </nav>
@@ -35,25 +35,25 @@
                 <br>
                 <div>
                     Телефон
-                    <select id="telcode" name="telcode" required>
+                    <select id="telcode" name="tel[]" required>
                         <option value="+375">+375</option>
                         <option value="+7">+7</option>
                         <option value="+380">+380</option>
                     </select>
-                    <input type="text" name="tel" placeholder="укажите телефон" required>
+                    <input type="number" name="tel[]" placeholder="укажите телефон" required>
                 </div>
                 <br>
                 <div>
                     <label>
                         Email
-                        <input type="email" name="email" id="email" placeholder="укажите e-mail" required>
+                        <input type="email" name="email" placeholder="укажите e-mail" required>
                     </label>
                 </div>
                 <br>
                 <div>
                     <label>
                         Объем памяти
-                        <select name="memory" id="">
+                        <select name="memory">
                             <option value="64">64</option>
                             <option value="256">256</option>
                             <option value="512">512</option>
@@ -69,12 +69,12 @@
                     </div>
                     <div>
                         <label>
-                            <input type="radio" name="delivery" value="Курьером" checked required> Курьером
+                            <input type="radio" name="delivery" value="Курьером" checked> Курьером
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="radio" name="delivery" value="Самовывоз" required> Самовывоз
+                            <input type="radio" name="delivery" value="Самовывоз"> Самовывоз
                         </label>
                     </div>
                 </div>
@@ -102,12 +102,12 @@
                 <br>
                 <div>
                     <div>Комментарий к заказу</div>
-                    <textarea name="comments" id="" cols="30" rows="10"></textarea>
+                    <textarea name="comments" cols="30" rows="10"></textarea>
                 </div>
                 <br>
                 <div>
                     <label>
-                        <input type="checkbox" name="agree" id="">
+                        <input type="checkbox" name="agree" required>
                         Принимаю
                         <a href="https://en.wikipedia.org/wiki/End-user_license_agreement">Условия сайта</a>
                     </label>
